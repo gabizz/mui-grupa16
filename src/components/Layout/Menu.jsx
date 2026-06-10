@@ -37,10 +37,10 @@ export default function MenuComponent() {
         </IconButton>
 
         {/* Company/Brand Name with Logo */}
-        <Stack 
-          direction="row" 
-          alignItems="center" 
-          onClick={() => navigate("/")} 
+        <Stack
+          direction="row"
+          alignItems="center"
+          onClick={() => navigate("/")}
           sx={{ cursor: 'pointer', userSelect: 'none' }}
         >
           <Box
@@ -54,11 +54,11 @@ export default function MenuComponent() {
               filter: 'brightness(0) invert(1)', // converts the dark SVG gradient to white to match the AppBar contrast, or we can keep it as is if we want color. Let's make it white so it looks clean on the dark primary appbar!
             }}
           />
-          <Typography 
-            variant="h6" 
-            component="div" 
-            sx={{ 
-              fontWeight: '800', 
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{
+              fontWeight: '800',
               letterSpacing: 1.5,
               color: 'inherit',
             }}
@@ -77,52 +77,52 @@ export default function MenuComponent() {
           onClose={handleCloseMenu}
           sx={{ display: { xs: 'block', sm: 'none' } }}
         >
-          <MenuItem onClick={() => handleMenuItemClick('/')}>ACASA</MenuItem>
+          <MenuItem onClick={() => handleMenuItemClick('/')}>HOME</MenuItem>
           <MenuItem onClick={() => handleMenuItemClick('/despre-noi')}>DESPRE NOI</MenuItem>
           <MenuItem onClick={() => handleMenuItemClick('/preturi')}>PRETURI</MenuItem>
           <MenuItem onClick={() => handleMenuItemClick('/contact')}>CONTACT</MenuItem>
         </Menu>
 
         {/* Horizontal Navigation Stack: Hidden on xs, visible on sm and up */}
-        <Stack 
-          direction="row" 
-          spacing={4} 
-          sx={{ 
-            cursor: "pointer", 
-            display: { xs: 'none', sm: 'flex' } 
+        <Stack
+          direction="row"
+          spacing={4}
+          sx={{
+            cursor: "pointer",
+            display: { xs: 'none', sm: 'flex' }
           }}
         >
-          <Typography 
-            variant="subtitle1" 
-            component="div" 
-            sx={{ fontWeight: '600', cursor: "pointer" }} 
+          <Typography
+            variant="subtitle1"
+            component="div"
+            sx={{ fontWeight: '600', cursor: "pointer" }}
             onClick={() => navigate("/")}
           >
-            ACASA
+            HOME
           </Typography>
 
-          <Typography 
-            variant="subtitle1" 
-            component="div" 
-            sx={{ fontWeight: '600', cursor: "pointer" }} 
+          <Typography
+            variant="subtitle1"
+            component="div"
+            sx={{ fontWeight: '600', cursor: "pointer" }}
             onClick={() => navigate("/despre-noi")}
           >
             DESPRE NOI
           </Typography>
 
-          <Typography 
-            variant="subtitle1" 
-            component="div" 
-            sx={{ fontWeight: '600', cursor: "pointer" }} 
+          <Typography
+            variant="subtitle1"
+            component="div"
+            sx={{ fontWeight: '600', cursor: "pointer" }}
             onClick={() => navigate("/preturi")}
           >
             PRETURI
           </Typography>
 
-          <Typography 
-            variant="subtitle1" 
-            component="div" 
-            sx={{ fontWeight: '600', cursor: "pointer" }} 
+          <Typography
+            variant="subtitle1"
+            component="div"
+            sx={{ fontWeight: '600', cursor: "pointer" }}
             onClick={() => navigate("/contact")}
           >
             CONTACT
